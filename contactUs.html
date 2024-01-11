@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel ='stylesheet' href = 'css/jquery-ui.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel ='stylesheet' href = 'css/remodel.css'>
+
+</head>
+<body>
+    <div class='pager'>
+        <div class='container-fluid wrapper'>
+        <header class='row m-0 p-0'>
+            <div class='col title'>
+                <p>
+                    <span class='d-lg-inline d-none lg-Title'>Contact Us</span>
+                    <span class='d-lg-none sm-Title'>Contact Us</span>
+                </p>
+            </div>
+        </header>
+        <main class='d-flex flex-md-row flex-column contactUs'>
+            <aside class='col-lg-4 m-0 p-0'>
+                <nav class='navbar row aboutNav' id='navRouter'>
+                   <a class='col-md-12 col-6 nav-item text-warning flex-wrap' href=''>
+                       <i data-link='index.html' class='m-2 fas fa-home'></i>
+                       <span data-link='index.html' class='text-center'>Home</span></a>
+                   <a class='col-md-12 col-6 p-0 m-md-1 m-0 nav-item text-warning flex-wrap' href=''>
+                       <i data-link='testimonies.html' class='m-2 fas fa-hammer'></i>
+                       <span data-link='testimonies.html' class='text-center'>Testimonies</span></a>
+                   <a class='col-md-12 col-6 nav-item text-primary flex-wrap' href=''>
+                       <i data-link='about.html' class='m-2 fas fa-paint-roller'></i>
+                       <span data-link='about.html' class='text-center'>About Mike</span></a>
+                   <a class='col-md-12 col-6 nav-item text-success flex-wrap' href=''>
+                       <i data-link='services.html' class='m-2 fas fa-money-check-alt'></i>
+                       <span data-link='services.html' class='text-center'>Prices & Services</span></a>
+                </nav>
+            </aside>
+            <section class='col-lg-8 row m-0 p-0 justify-content-center align-items-center' id='contactUs'>
+               <form class = 'col-10 form my-4 p-3 border-0' id='contactUsForm' name='contactUsForm'>
+                    <h3 class='text-center'>Contact Form</h3>
+                    <section class='formFields row m-0 p-0'>
+                        <div class="form-group col-lg-6 border">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control mb-2" id="fname" name='fname' placeholder="First Name" required>
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control mb-2" id="lname" name="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group col-lg-6 border">
+                            <label for="email">Email address</label>
+                            <input type="text" class="form-control mb-2" id="email" name="email" placeholder="example@provider.com">
+                            <label for="phone">phone #</label>
+                            <input type="tel" class="form-control mb-2" id="phone" name="phone" pattern="[1-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+                        </div>
+                        <div class="form-group col-12 row m-0 p-0 border">
+                            <label class = 'col-12' >Mailing address</label>
+                            <div class='col-6'>
+                               <input type="text" class="form-control mb-2" id="address" name="address" placeholder="address">
+                               <input type="text" class="form-control mb-2" id="apt" name="apt" placeholder="Apt#/Suite">
+                            </div>
+                            <div class='col-6'>
+                               <input type="text" class="form-control mb-2" id="city" name="city"  placeholder="City, State">
+                               <input type="text" class="form-control mb-2" id="zip" name="zip" placeholder="Zip code">
+                            </div>
+                        </div>
+                        <div class="form-group col-12 border py-3">
+                          <div class='row'>
+                            <p class='col-6'>Do you need financial assistance?</p>
+                            <div class='col-2'>
+                                <label for="quest1"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest1" id="quest1-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest1" id="quest1-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-6'>Would you like to receive our e-Newsletter</p>
+                            <div class='col-2'>
+                                <label for="quest1"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest2" id="quest2-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest2" id="quest2-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-6'>Are you interested in maintenance contracts</p>
+                            <div class='col-2'>
+                                <label for="quest3"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest3" id="quest3-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest3" id="quest3-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-5'>Please write a Comment: </p>
+                            <textarea class="form-control col-lg-6" role='input' type='input' name="comment" id="comment" placeholder = 'Write Here'  required ></textarea>
+                          </div>
+                        </div>
+                    </section>
+                    <div class='text-center'>
+                        <button class='btn' name='btn' type='submit' id='submitForm'>Submit</button>
+                    </div>
+               </form>
+            </section>
+        </main>
+        <footer class='row m-0 p-0'>
+            <div class = 'col row align-items-center text-light '><h5>copyright &copy; 2022: designed by Zincom Computer Solutions</h5></div>
+            <div class = 'col row justify-content-end align-items-center'>
+                <i class='fab fa-facebook text-primary '></i>
+                <i class='fab fa-twitter text-warning mx-4'></i>
+                <i class='fab fa-linkedin text-primary '></i>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src= 'scripts/remodel.js'></script>
+</body>
+
+</html>

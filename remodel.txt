@@ -1,0 +1,17 @@
+about Me:
+As a youth, I was top of my class in Wood and Metal shop. I first entered the construction industry in 2002, as a Plaster Finisher, applying interior and exterior stucco. Having extended my skillset to neigboring hanging drywall, and install fixtures, I soon discovered my talent for painting. Putting it all together, I have been remodeling homes and businesses for over 10 years. My philosophy is simple: Value driven - Quality assured.
+Understanding the value of service, I also provide steep discounts for those struggling financially.  Let's meet so we can see how my skills and experience can meet your remodeling needs.
+
+form validate subject: replacing html tags in form input
+
+In general, the way to prevent XSS(cross-site scripting) attacks is to remove HTML tags from any untrus‐
+ted data before using it to create dynamic document content. You can fix the
+greet.html file shown earlier by replacing special HTML characters in the untrusted
+input string with their equivalent HTML entities:
+name = name
+ .replace(/&/g, "&amp;")
+ .replace(/</g, "&lt;")
+ .replace(/>/g, "&gt;")
+ .replace(/"/g, "&quot;")
+ .replace(/'/g, "&#x27;")
+ .replace(/\//g, "&#x2F;")

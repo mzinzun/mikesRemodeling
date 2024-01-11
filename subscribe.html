@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel ='stylesheet' href = 'css/jquery-ui.min.css'>
+    <link rel ='stylesheet' href = 'css/bootstrap.min.css'>
+    <link rel ='stylesheet' href = 'css/all.css'>
+    <link rel ='stylesheet' href = 'css/remodel.css'>
+    <title>Subscribe</title>
+</head>
+<body>
+    <div class='pager'>
+        <div class='container-fluid wrapper'>
+        <header class='row m-0 p-0'>
+            <div class='col title'>
+                <p>
+                    <span class='d-lg-inline d-none lg-Title'>Mike's Remodeling</span>
+                    <span class='d-lg-none sm-Title'>Mike's Remodeling</span>
+                </p>
+            </div>
+        </header>
+        <main class='d-flex flex-md-row flex-column m-0 p-0 subscriber'>
+            <aside class='col-lg-5 m-0 p-0'>
+                <nav class='navbar d-flex flex-md-column flex-row m-0 p-4' id='navRouter'>
+                    <a class='col-md col-6 p-4 m-md-1 m-0 nav-item text-info flex-wrap' href=''>
+                       <i data-link='index.html' class='m-2 fas fa-home'></i>
+                       <span data-link='index.html' class='text-center'>Home</span></a>
+                   <a class='col-md col-6 p-0 m-md-1 m-0 p-0 nav-item text-warning flex-wrap' href=''>
+                       <i data-link='testimonies.html' class='m-md-2 fas fa-hammer'></i>
+                       <span data-link='testimonies.html' class='text-center'>Tesimonies</span></a>
+                   <a class='col-md col-6 m-md-1 m-0 p-0 nav-item text-primary flex-wrap' href=''>
+                       <i data-link='about.html' class='m-2 fas fa-paint-roller'></i>
+                       <span data-link='about.html' class='text-center'>About Mike</span></a>
+                   <a class='col-md col-6 m-md-1 p-0 nav-item text-success flex-wrap' href=''>
+                       <i data-link='services.html' class='m-2 fas fa-money-check-alt'></i>
+                       <span data-link='services.html' class='text-center'>Prices & Sevices</span></a>
+                </nav>
+            </aside>
+            <section class='col-lg-7 row m-0 p-0 justify-content-center align-items-center' id='subscribe'>
+               <form class = 'col-10 form my-4 p-3 border-0' id='subscribeForm' name='subscribeForm'>
+                    <h3 class='text-center'>Subsciption Form</h3>
+                    <section class='formFields row m-0 p-0'>
+                        <div class="form-group col-lg-6 border">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control mb-2" id="fname" name='fname' placeholder="First Name" required>
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control mb-2" id="lname" name="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group col-lg-6 border">
+                            <label for="email">Email address</label>
+                            <input type="text" class="form-control mb-2" id="email" name="email" placeholder="example@provider.com">
+                            <label for="phone">phone #</label>
+                            <input type="tel" class="form-control mb-2" id="phone" name="phone" pattern="[1-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+                        </div>
+                        <div class="form-group col-12 row m-0 p-0 border">
+                            <label class = 'col-12' >Mailing address</label>
+                            <div class='col-6'>
+                               <input type="text" class="form-control mb-2" id="address" name="address" placeholder="address">
+                               <input type="text" class="form-control mb-2" id="apt" name="apt" placeholder="Apt#/Suite">
+                            </div>
+                            <div class='col-6'>
+                               <input type="text" class="form-control mb-2" id="city" name="city"  placeholder="City, State">
+                               <input type="text" class="form-control mb-2" id="zip" name="zip" placeholder="Zip code">
+                            </div>
+                        </div>
+                        <div class="form-group col-12 border py-3">
+                          <div class='row'>
+                            <p class='col-6'>Do you need financial assistance?</p>
+                            <div class='col-2'>
+                                <label for="quest1"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest1" id="quest1-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest1" id="quest1-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-6'>Would you like to receive our e-Newsletter</p>
+                            <div class='col-2'>
+                                <label for="quest1"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest2" id="quest2-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest2" id="quest2-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-6'>Are you interested in maintenance contracts</p>
+                            <div class='col-2'>
+                                <label for="quest3"> yes</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest3" id="quest3-yes" value="yes" >
+                            </div>
+                            <div class='col-2'>
+                                <label for="quest1"> No</label>
+                                <input class="form-check-input mx-2" type="radio" name="quest3" id="quest3-no" value="no" >
+                            </div>
+                          </div>
+                          <div class='row'>
+                            <p class='col-6'>Please provide a password: must be at least 6 characters</p>
+                            <div class='col-6 row'>
+                                <label for="password" class='col-lg-6'>password</label>
+                                <input class="form-control col-lg-6" type="input" name="password" id="password" required >
+                            </div>
+
+                          </div>
+                        </div>
+                    </section>
+                    <div class='text-center'>
+                        <button class='btn' type='submit' id='submitForm'>Submit</button>
+                    </div>
+               </form>
+            </section>
+        </main>
+        <footer class='row m-0 p-0'>
+            <div class = 'col row align-items-center text-light '><h5>copyright &copy; 2022: designed by Zincom Computer Solutions</h5></div>
+            <div class = 'col row justify-content-end align-items-center'>
+                <i class='fab fa-facebook text-primary '></i>
+                <i class='fab fa-twitter text-warning mx-4'></i>
+                <i class='fab fa-linkedin text-primary '></i>
+            </div>
+        </footer>
+    </div>
+    </div>
+<script src= 'scripts/jquery-3.3.1.min.js'></script>
+<script src= 'scripts/jquery-ui.min.js'></script>
+<script src= 'scripts/remodel.js'></script>
+</body>
+
+</html>

@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Mike</title>
+    <link rel ='stylesheet' href = 'css/jquery-ui.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel ='stylesheet' href = 'css/remodel.css'>
+
 </head>
 <body>
-    <h1>About Page</h1>
-    <a href="index.html">Home</a>
+    <div class='pager'>
+        <div class='container-fluid wrapper'>
+        <header class='row m-0 p-0'>
+            <div class='col title'>
+                <p>About Mike</p>
+            </div>
+        </header>
+        <main class='d-flex flex-md-row flex-column m-0 p-0 tMain '>
+            <aside class='col-md-5 m-0 p-0'>
+                <nav class='navbar row aboutNav' id='navRouter'>
+                    <a class='col-md-12 col-6 m-md-1 m-0 p-0 nav-item text-primary flex-wrap' href=''>
+                       <i data-link='index.html' class='m-2 fas fa-home'></i>
+                       <span data-link='index.html' class='text-center'>Home</span></a>
+                   <a class='col-md-12 col-6 p-0 m-md-1 m-0 nav-item text-warning flex-wrap' href=''>
+                       <i data-link='testimonies.html' class='m-2 fas fa-hammer'></i>
+                       <span data-link='testimonies.html' class='text-center'>Testimonies</span></a>
+                   <a class='col-md-12 col-6 m-0 p-0 m-md-1 nav-item text-info flex-wrap' href=''>
+                       <i data-link='contactUs.html' class='m-2 fas fa-screwdriver'></i>
+                       <span data-link='contactUs.html' class='text-center'>Contact Us</span></a>
+
+                   <a class='col-md-12 col-6 m-md-1 p-0 m-0 nav-item text-success flex-wrap' href=''>
+                       <i data-link='services.html' class='m-2 fas fa-money-check-alt'></i>
+                       <span data-link='services.html' class='text-center'>Prices & Services</span></a>
+                </nav>
+            </aside>
+            <section class='col-md-7 row m-0 p-0 px-md-4 align-items-center justify-content-center' >
+                <div  class='text-light col m-0 p-2 text-center bg-success about'>
+                    <article class='p-2 aboutArticle border'>As a youth, I was top of my class in Wood and Metal shop. I first entered the construction industry in 2002, as a Plaster Finisher, applying interior and exterior stucco. Having extended my skillset to neigboring drywall, and installing fixtures, I soon discovered my talent for painting. Putting it all together, I have been remodeling homes and businesses for over 10 years. My philosophy is simple:<br><em class='text-success'> Value driven - Quality assured</em><br>Understanding the value of service, I also provide steep discounts for those struggling financially.  Let's meet so we can see how my skills and experience can meet your remodeling needs.
+                    </article>
+                </div>
+                <!-- Images put here with imagePager() -->
+            </section>
+        </main>
+        <footer class='row m-0 p-0'>
+            <div class = 'col row align-items-center text-light '><h5>copyright &copy; 2022: designed by Zincom Computer Solutions</h5></div>
+            <div class = 'col row justify-content-end align-items-center'>
+                <i class='fab fa-facebook text-primary '></i>
+                <i class='fab fa-twitter text-warning mx-4'></i>
+                <i class='fab fa-linkedin text-primary '></i>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src= 'scripts/remodel.js'></script>
 </body>
+
 </html>
